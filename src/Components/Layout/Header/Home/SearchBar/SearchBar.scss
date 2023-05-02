@@ -7,7 +7,10 @@
 
   background: transparent;
   border: transparent;
+  outline: none;
   border-bottom: 0.5px solid #ffffff;
+
+  color: $header-text-color;
 
   &::placeholder {
     color: $header-text-color;
@@ -23,5 +26,4 @@
 .loop {
   position: absolute;
   right: 10px;
-
 }
