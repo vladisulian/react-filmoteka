@@ -1,0 +1,15 @@
+header nav {
+  display: flex;
+  align-items: center;
+  padding: 40px 20px;
+
+  text-transform: uppercase;
+}
+
+header nav a:first-child {
+  margin-right: 113px;
+}
+
+header nav a:nth-child(2) {
+  margin-right: 40px;
+}
