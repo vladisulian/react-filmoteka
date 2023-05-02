@@ -1,0 +1,27 @@
+@import "/src/scss/variables.scss";
+.SearchBar {
+  width: 280px;
+  height: 20px;
+
+  font-size: 14px;
+
+  background: transparent;
+  border: transparent;
+  border-bottom: 0.5px solid #ffffff;
+
+  &::placeholder {
+    color: $header-text-color;
+  }
+}
+
+.searchBar-label {
+  display: flex;
+
+  position: relative;
+}
+
+.loop {
+  position: absolute;
+  right: 10px;
+
+}
