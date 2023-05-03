@@ -1,0 +1,15 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination li {
+  width: 40px;
+  height: 40px;
+  
+  border-radius: 5px;
+}
+
+.pagination .arrows {
+  background-color: #f7f7f7;
+}
