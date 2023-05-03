@@ -5,6 +5,7 @@ import Pagination from "../../Components/Smart/Pagination/Pagination";
 
 const Homepage = () => {
   const [trendingsFilms, setTrendingsFilms] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
 
   // get trending films
   useEffect(() => {
@@ -22,14 +23,19 @@ const Homepage = () => {
     getTrending();
   }, []);
 
-  const filmsQuantity = trendingsFilms.map((__, index) => {
-    return index + 1;
-  });
+  const onPageChange = (pageNumber) => {
+    console.log(`Page number ${pageNumber}`);
+    return;
+  };
 
   return (
     <>
       <TrendingsList trendingsFilms={trendingsFilms} />
-      <Pagination filmsQuantity={filmsQuantity} />
+      <Pagination
+        currentPage={currentPage}
+        onPageChange={onPageChange}
+        totalPages={10}
+      />
     </>
   );
 };

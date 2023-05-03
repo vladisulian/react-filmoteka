@@ -1,6 +1,5 @@
 import { useLocation } from "react-router";
 import HomeHeader from "./Home/HomeHeader";
-import LibHeader from "./Library/LibHeader";
 import("./Header.css");
 const Header = () => {
   const location = useLocation();
