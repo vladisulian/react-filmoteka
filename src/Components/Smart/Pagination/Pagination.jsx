@@ -21,11 +21,12 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   // Get the range of pages to display
   const pagesToShow = getPaginationRange(currentPage, totalPages, visiblePages);
 
   // Use for loop to create a page button for each page in the range
-  for (let i = 0; i < pagesToShow.length; i++) {
+  for (let i = 0; i < pagesToShow.length - 1; i++) {
     const pageNumber = pagesToShow[i];
     if (pageNumber === currentPage) {
       pages.push(

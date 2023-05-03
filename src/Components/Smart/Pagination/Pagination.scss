@@ -1,15 +1,32 @@
+@import "/src/scss/variables.scss";
+
 .pagination {
+  //   display: flex;
+  //   justify-content: center;
+
+  //   text-align: center;
+
   display: flex;
-  justify-content: center;
+  gap: 5px;
+  width: 280px;
+  padding: 0 20px;
 }
 
 .pagination li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 40px;
   height: 40px;
-  
+
   border-radius: 5px;
 }
 
+.pagination li.active {
+  background-color: $pag-active-color;
+}
+
 .pagination .arrows {
-  background-color: #f7f7f7;
+  background-color: $pag-arrows-color;
 }
