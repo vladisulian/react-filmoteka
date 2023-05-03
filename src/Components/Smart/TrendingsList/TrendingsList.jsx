@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { getPosterPath } from "../../../API/API";
 
 const TrendingsList = ({ trendingsFilms }) => {
   return (
@@ -8,7 +9,7 @@ const TrendingsList = ({ trendingsFilms }) => {
           {trendingsFilms.map((film) => {
             return (
               <li key={film.id}>
-                <img src={film.poster_path} alt="film poster" />
+                <img src={getPosterPath(film.poster_path)} alt="film poster" />
                 <p className="film-title">{film.original_title}</p>
                 <p className="film-subtitle"></p>
               </li>
@@ -21,7 +22,7 @@ const TrendingsList = ({ trendingsFilms }) => {
 };
 
 TrendingsList.propTypes = {
-  trendingsFilms: PropTypes.array,
+  trendingsFilms: PropTypes.array.isRequired,
 };
 
 export default TrendingsList;
