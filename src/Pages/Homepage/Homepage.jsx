@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getTrendingFilms } from "../../API/API";
 import TrendingsList from "../../Components/Smart/TrendingsList/TrendingsList";
+import Pagination from "../../Components/Smart/Pagination/Pagination";
 
 const Homepage = () => {
   const [trendingsFilms, setTrendingsFilms] = useState([]);
@@ -21,9 +22,14 @@ const Homepage = () => {
     getTrending();
   }, []);
 
+  const filmsQuantity = trendingsFilms.map((__, index) => {
+    return index + 1;
+  });
+
   return (
     <>
       <TrendingsList trendingsFilms={trendingsFilms} />
+      <Pagination filmsQuantity={filmsQuantity} />
     </>
   );
 };
