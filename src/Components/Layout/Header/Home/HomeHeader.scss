@@ -2,6 +2,12 @@
 .home-header {
   background-color: $header-bg-color;
   background-image: url("../Images/header-320px.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 768px) and (max-width: 1239px) {
+    background-image: url("../Images/header-768px.png");
+  }
 
   color: $header-text-color;
 }

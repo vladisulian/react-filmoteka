@@ -3,12 +3,18 @@
   margin-bottom: 40px;
 
   gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
 }
 .trendings-list,
 .trendings-list .item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .film-poster {
