@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../Images/logo.svg";
-
-const Navigation = () => {
+import { memo } from "react";
+const Navigation = memo(() => {
   return (
     <>
       <nav>
@@ -13,6 +13,6 @@ const Navigation = () => {
       </nav>
     </>
   );
-};
+});
 
 export default Navigation;

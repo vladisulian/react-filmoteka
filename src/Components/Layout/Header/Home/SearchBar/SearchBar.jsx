@@ -1,6 +1,7 @@
+import { memo } from "react";
 import loop from "../../Images/loop.svg";
 import("./SearchBar.scss");
-const SearchBar = () => {
+const SearchBar = memo(() => {
   return (
     <>
       <label className="searchBar-label">
@@ -15,6 +16,6 @@ const SearchBar = () => {
       </label>
     </>
   );
-};
+});
 
 export default SearchBar;

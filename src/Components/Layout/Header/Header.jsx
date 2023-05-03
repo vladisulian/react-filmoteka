@@ -10,8 +10,9 @@ const Header = () => {
 
   return (
     <>
-      {showHomeHeader && <HomeHeader />}
-      {showLibraryHeader && <LibHeader />}
+      {/* {showHomeHeader && <HomeHeader />}
+      {showLibraryHeader && <LibHeader />} */}
+      <HomeHeader />
     </>
   );
 };
