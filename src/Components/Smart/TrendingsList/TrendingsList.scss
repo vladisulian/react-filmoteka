@@ -17,9 +17,22 @@
   justify-content: center;
 }
 
+.trendings-list .item {
+  transition: 350ms ease transform;
+  &:hover {
+    transform: scale(1.025);
+
+    @media screen and (min-width: 768px) {
+      transform: scale(1.05);
+    }
+  }
+}
+
 .film-poster {
   width: 280px;
   height: 400px;
+
+  border-radius: 10px;
 
   margin-bottom: 10px;
 }
