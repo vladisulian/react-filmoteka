@@ -10,9 +10,9 @@ const getPosterPath = (posterPath) => {
 
 const getTrendingFilms = async () => {
   try {
-    const data = await axios.get(`trending/all/day?api_key=${API_KEY}`);
-    console.log(data.data.results);
-    return data.data.results;
+    const { data } = await axios.get(`trending/all/day?api_key=${API_KEY}`);
+    console.log(data.results);
+    return data.results;
   } catch (error) {
     console.error(error);
   }
