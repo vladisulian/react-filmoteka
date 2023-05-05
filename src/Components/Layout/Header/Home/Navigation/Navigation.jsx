@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../Images/logo.svg";
 import { memo, useEffect, useState } from "react";
 import("./Navigation.scss");
@@ -24,10 +24,10 @@ const Navigation = memo(() => {
   return (
     <>
       <nav>
-        <NavLink to={""}>
+        <Link to={""}>
           <img src={logo} className="logo-image" alt="site logo" />
           {!mobileDevice && <p className="logo-text">Filmoteka</p>}
-        </NavLink>
+        </Link>
         <NavLink to={""}>Home</NavLink>
         <NavLink to={"library"}>Library</NavLink>
       </nav>
