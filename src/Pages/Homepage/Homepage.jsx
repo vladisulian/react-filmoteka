@@ -24,6 +24,7 @@ const Homepage = () => {
   }, []);
 
   const onPageChange = (pageNumber) => {
+    // TODO
     console.log(`Page number ${pageNumber}`);
     return;
   };
