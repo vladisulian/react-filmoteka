@@ -1,0 +1,2 @@
+header nav{align-items:center;display:flex;justify-content:space-between;text-transform:uppercase}header nav a:not(.js-logo):after{content:"";display:block;height:3px;transition-duration:.35s;transition-property:width,background-color;transition-timing-function:ease;width:0}header nav a.active:after{background-color:#ff001b;width:100%}.js-logo{flex-direction:row!important;gap:10px}header nav a:first-child{align-items:center;display:flex;flex-direction:column}.links-container{display:flex;gap:40px}
+/*# sourceMappingURL=570.13c8876b.chunk.css.map*/
