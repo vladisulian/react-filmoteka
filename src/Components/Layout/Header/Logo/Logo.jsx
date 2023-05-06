@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../Images/logo.svg";
 
-const Logo = () => {
+const Logo = memo(() => {
   const [mobileDevice, setmobileDevice] = useState(true);
 
   useEffect(() => {
@@ -28,6 +28,6 @@ const Logo = () => {
       </Link>
     </>
   );
-};
+});
 
 export default Logo;

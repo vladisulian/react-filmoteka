@@ -5,8 +5,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media screen and (min-width: 768px) and (max-width: 1239px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     background-image: url("../Images/header-768px.png");
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url("../Images/header-1280px.png");
   }
 
   color: $header-text-color;

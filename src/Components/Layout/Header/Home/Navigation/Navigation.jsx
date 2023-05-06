@@ -9,6 +9,7 @@ const Navigation = memo(() => {
   const location = useLocation();
   const onHomepage = location.pathname === "/react-filmoteka";
 
+  // dynamic stylization home-link
   useEffect(() => {
     // Homelink .active class don't work how i want it need to work.
     // Thats why i create this hook, who handle change homelink class
