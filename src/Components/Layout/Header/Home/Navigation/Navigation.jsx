@@ -1,11 +1,9 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
-import logo from "../../Images/logo.svg";
-import { memo, useEffect, useState, useRef } from "react";
+import { memo, useEffect, useRef } from "react";
+import Logo from "../../Logo/Logo";
 import("./Navigation.scss");
 
 const Navigation = memo(() => {
-  const [mobileDevice, setmobileDevice] = useState(true);
-
   const homeLinkRef = useRef(null);
 
   const location = useLocation();
@@ -22,28 +20,10 @@ const Navigation = memo(() => {
       : homeLinkRef.current.classList.remove("active");
   }, [onHomepage]);
 
-  useEffect(() => {
-    // function used for dynamic creating Filmoteka title
-    const handleResize = () => {
-      window.innerWidth > 767 ? setmobileDevice(false) : setmobileDevice(true);
-    };
-    handleResize();
-    // create eventListener resize, use handleResize function as callback
-    window.addEventListener("resize", handleResize);
-
-    // remove eventListener in Unmounting stage, handleResize as callback
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <>
       <nav>
-        <Link to={""}>
-          <img src={logo} className="logo-image" alt="site logo" />
-          {!mobileDevice && <p className="logo-text">Filmoteka</p>}
-        </Link>
+        <Logo />
         <Link to={""} ref={homeLinkRef}>
           Home
         </Link>
