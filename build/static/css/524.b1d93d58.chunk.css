@@ -1,0 +1,2 @@
+.SearchBar{background:transparent;border:transparent;border-bottom:.5px solid #fff;color:#fff;font-size:14px;height:20px;outline:none;width:280px}@media screen and (min-width:768px)and (max-width:1279px){.SearchBar{width:360px}}@media screen and (min-width:1280px){.SearchBar{width:400px}}.SearchBar::-webkit-input-placeholder{color:#fff}.SearchBar::placeholder{color:#fff}.searchBar-label{display:flex;position:relative}.loop{position:absolute;right:10px}
+/*# sourceMappingURL=524.b1d93d58.chunk.css.map*/
