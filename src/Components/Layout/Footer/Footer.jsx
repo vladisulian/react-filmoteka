@@ -6,7 +6,7 @@ const Footer = memo(() => {
   return (
     <>
       <footer>
-        <p>© 2020 | All Rights Reserved |</p>
+        <p>© 2023 | All Rights Reserved |</p>
         <p>
           Developed with <img src={heartSVG} alt="GoIT heart" /> by GoIT
           Students
