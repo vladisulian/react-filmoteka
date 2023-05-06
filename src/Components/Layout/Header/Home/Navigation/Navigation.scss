@@ -2,12 +2,9 @@
 header nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   text-transform: uppercase;
-
-  // @media screen and (min-width: 768px) {
-  //   padding-left: 40px;
-  // }
 }
 
 // styles applied for all <a> links except link with .js-logo class
@@ -29,17 +26,17 @@ header nav a.active {
   }
 }
 
+.js-logo {
+  flex-direction: row !important;
+  gap: 10px;
+}
 header nav a:first-child {
-  margin-right: 113px;
   display: flex;
   align-items: center;
-  gap: 10px;
-
-  @media screen and (min-width: 768px) {
-    margin-right: 400px;
-  }
+  flex-direction: column;
 }
 
-header nav a:nth-child(2) {
-  margin-right: 40px;
+.links-container {
+  display: flex;
+  gap: 40px;
 }
