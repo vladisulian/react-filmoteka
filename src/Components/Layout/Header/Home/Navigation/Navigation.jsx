@@ -23,12 +23,14 @@ const Navigation = memo(() => {
 
   return (
     <>
-      <nav>
+      <nav className="container">
         <Logo />
-        <Link to={""} ref={homeLinkRef}>
-          Home
-        </Link>
-        <NavLink to={"library"}>Library</NavLink>
+        <div className="links-container">
+          <Link to={""} ref={homeLinkRef}>
+            Home
+          </Link>
+          <NavLink to={"library"}>Library</NavLink>
+        </div>
       </nav>
     </>
   );
