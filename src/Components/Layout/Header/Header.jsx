@@ -6,6 +6,8 @@ const Header = () => {
 
   const showHomeHeader = location.pathname === "/react-filmoteka";
   const showLibraryHeader = location.pathname === "/react-filmoteka/library";
+  
+  // TODO create only ONE(1) header for library and homepage
 
   return (
     <>
