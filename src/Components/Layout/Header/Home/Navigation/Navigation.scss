@@ -10,7 +10,8 @@ header nav {
   // }
 }
 
-header nav a::after {
+// styles applied for all <a> links except link with .js-logo class
+header nav a:not(.js-logo)::after {
   content: "";
   display: block;
   width: 0;
