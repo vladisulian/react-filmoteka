@@ -1,12 +1,18 @@
 .trendings-list {
   padding-top: 20px;
-  margin-bottom: 40px;
+  margin: 0 auto 40px auto;
 
   gap: 20px;
 
   @media screen and (min-width: 768px) {
-    flex-direction: row !important;
     flex-wrap: wrap;
+    flex-direction: row !important;
+
+    max-width: 900px;
+  }
+
+  @media screen and (min-width: 880px) {
+    justify-content: start !important;
   }
 }
 .trendings-list,
