@@ -21,6 +21,7 @@
   "devDependencies": {
     "gh-pages": "^5.0.0"
   },
+  "deploy": "gh-pages -d build",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
