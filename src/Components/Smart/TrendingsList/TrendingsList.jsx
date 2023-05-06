@@ -16,7 +16,9 @@ const TrendingsList = ({ trendingsFilms }) => {
                   className="film-poster"
                 />
                 <div className="film-about">
-                  <p className="film-title">{film.original_title}</p>
+                  <p className="film-title">
+                    {film.original_title || film.original_name}
+                  </p>
                   <p className="film-subtitle">Genres | Year</p>
                 </div>
               </li>
